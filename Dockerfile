@@ -10,3 +10,5 @@ RUN mkdir /AutoFilterBot
 WORKDIR /AutoFilterBot
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
+# Setting a port for your app communications with Telegram servers.
+EXPOSE 8080/tcp
